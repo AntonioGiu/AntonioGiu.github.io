@@ -1,56 +1,68 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Sample Webpage</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
         body {
-            font-family: "Poller One", sans-serif;
+            display :flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: green;
         }
-        h1{text-align: center;
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style-type: none;
+            padding: 0;
+            
         }
-        section {
-            margin: auto;
-            width:80%;
-            border: 2px solid black;
+        nav ul li {
+            margin: 0px 20px 0px 20px;  
+            background-color: aqua;
             padding: 10px;
+            border: 5px ridge darkslateblue;
+            border-radius: 10px;
         }
+        article {
+            background-color: palevioletred;
+            width: 75%;
+            border-width: 5px;
+            border-style: ridge;
+            border-color: black;
+            border-radius: 10px;
+            transition: 1s;
+        }
+    nav ul li:hover {
+        background-color: blanchedalmond;
+        margin: 0px;
+        padding: 20px 30px 20px 30px;
+        transition: 1s;
+    }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>Sample Webpage</h1>
-        <Nav>
-            <details>
-                <summary>Navigation Bar</summary>
-                <ul>
-                    <li><a href="index.html">Home Page</a></li>
-                    <li><a href="about.html">About Page</a></li>
-                    <li><a href="Gettoschool7/index.html">Game Page</a></li>
-                    <li><a href="https://guthib.com/">Github</a></li>
-                </ul>
-            </details>
-        </Nav>
-    </header>
-
-<section>
+    <h1>THE ONE PIECE, THE ONE PIECE IS REAL</h1>
+    <nav>
+        <ul> 
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
+    </nav>
     <article>
-        <h2>Welcome to My Webpage</h2>
-        <time datetime="2026-04-07">April 7th</time>
-        <p>Heres some stuff about my webpage</p>
+        <h2>Article Title</h2>
+        <p>Text</p>
+        <footer>
+            &copy;2026
+        </footer>
     </article>
-    
-    <article>
-        <h2>Other Stuff</h2>
-        <time datetime="2026-04-07">April 7th</time>
-        <p>Im Pheremonemaxxing</p>
-    </article>
-</section>
-    <footer>Made by Antonio G</footer>
+    <img src="0 "  alt="">
 </body>
 
 </html>
