@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 100px;
+        }
+        body {
+            display :flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(2, 199, 150);
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style-type: none;
+            padding: 0;
+            
+        }
+        nav ul li {
+            margin: 0px 20px 0px 20px;  
+            background-color: aqua;
+            padding: 10px;
+            border: 5px ridge darkslateblue;
+            border-radius: 10px;
+        }
+        article {
+            background-color: palevioletred;
+            width: 75%;
+            border-width: 5px;
+            border-style: ridge;
+            border-color: black;
+            border-radius: 10px;
+            transition: 1s;
+        }
+    nav ul li:hover {
+        background-color: blanchedalmond;
+        margin: 0px;
+        padding: 20px 30px 20px 30px;
+        transition: 1s;
+    }
+    #urmyspecial {
+        top: 10px;
+        left: 10px;
+        position: absolute;
+    }
+    #Gojo {
+        top: 10px;
+        right: 100px;
+        position: absolute;
+    }
+        p {
+        margin-left: 200px;
+        margin-right: 200px;
+        font-size: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        align-items: center;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>About Me Page</h1>
+    <nav>
+        <ul> 
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="newgame.html">Game Page</a></li>
+            <li><a href="https://www.nintendo.com/us/store/products/hello-kitty-island-adventure-switch/">Hello Kitty Island Adventure</a></li> 
+        </ul>
+    </nav>
+    <p>My name is Antonio Giuffrida and I am doing this as a project for school. This will most likely end up as kind of a time capsule
+        thing once I hit senior year. Here are a buncha images of my interests. (The ones above count too)
+    </p>
+  <div>
+    <img id="potentialman" src="https://tse2.mm.bing.net/th/id/OIP.57IIeABnpTQvulLZ3a9hcwHaHa?w=171&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Potential" width="300">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.uzL-C7pPMUlJsAV1WY4AlAHaHa?w=166&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="" width="300">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.8usSUp--Hy8abxNpt1r4qwHaEK?w=282&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="" height="300">
+  </div>
+    <img id=urmyspecial src="https://tse1.mm.bing.net/th/id/OIP.royi8wjNTSEv49rPm-OZ7gHaE4?w=284&h=187&c=7&r=0&o=7&pid=1.7&rm=3" width="400px" >
+    <img id="Gojo" src="https://tse2.mm.bing.net/th/id/OIP.kF1drw9E9tZNa7kWGvEi1QHaHa?w=181&h=181&c=7&r=0&o=7&pid=1.7&rm=3" width="300">
+</body>
+</html>

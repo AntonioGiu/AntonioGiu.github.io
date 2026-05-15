@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Page</title>
+    <style>
+        #startButton {
+            position: absolute;
+            top: 725px;
+            left: 1290px;
+            background-color: aqua;
+        }
+          h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 100px;
+        }
+        body {
+            display :flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(2, 199, 150);
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style-type: none;
+            padding: 0;
+            
+        }
+        nav ul li {
+            margin: 0px 20px 0px 20px;  
+            background-color: aqua;
+            padding: 10px;
+            border: 5px ridge darkslateblue;
+            border-radius: 10px;
+        }
+    nav ul li:hover {
+        background-color: blanchedalmond;
+        margin: 0px;
+        padding: 20px 30px 20px 30px;
+        transition: 1s;
+    }
+    p {
+        margin-left: 200px;
+        margin-right: 200px;
+        font-size: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        align-items: center;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to the Game Page</h1>
+        <nav>
+        <ul> 
+            <li><a href="about.html">About Page</a></li>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="https://www.nintendo.com/us/store/products/hello-kitty-island-adventure-switch/">Hello Kitty Island Adventure</a></li> 
+        </ul>
+    <button id="startButton" onMouseover="moveButton()">Click here to start the game</button>
+    <p>I have spent the 8 weeks making this game, alternating between weeks. It has been a blast and I hope that you enjoy my half-baked game. 
+        Sorry, it might have a few bugs but i can promise you that I will NOT be fixing them because I quite frankly dont see myself putting much more into this game</p>
+    <p>It was gonna be One-Piece themed. Here it is ----></p>
+    <a href="">Heres the real link</a>  
+</body>
+<script>
+    function moveButton() {
+        var button = document.getElementById("startButton");
+        var width = window.innerWidth;
+        var height = window.innerHeight;
+
+        //Get a random position in the width
+        width = Math.random() * width;
+        height = Math.random() * height;
+
+        button.style.left = width + "px";
+        button.style.top = height + "px";
+
+    }
+</script>
+
+</html>
